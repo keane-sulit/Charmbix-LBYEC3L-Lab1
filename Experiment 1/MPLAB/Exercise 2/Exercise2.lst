@@ -1,0 +1,105 @@
+MPASM  5.51                     EXERCISE2.ASM   2-1-2023  22:45:39         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 ;======================================;
+                      00002 ; Author: Charmbix                                         ;
+                      00003 ; Version: 1.0                                             ;
+                      00004 ; Course: LBYEC3F - EK1                            ;
+                      00005 ; Title: Experiment 1: Exercise 2          ;
+                      00006 ;======================================; 
+                      00007 
+                      00008 ; Start
+                      00009 
+                      00010 ; Segment B
+Warning[203]: Found opcode in column 1. (BSF)
+0000   1683           00011 BSF 03h, 5
+Warning[203]: Found opcode in column 1. (BCF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0001   1306           00012 BCF 86h, 6
+Warning[203]: Found opcode in column 1. (BCF)
+0002   1283           00013 BCF 03h, 5
+Warning[203]: Found opcode in column 1. (BSF)
+0003   1706           00014 BSF 06h, 6
+                      00015 
+                      00016 ; Segment C
+Warning[203]: Found opcode in column 1. (BSF)
+0004   1683           00017 BSF 03h, 5
+Warning[203]: Found opcode in column 1. (BCF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0005   1286           00018 BCF 86h, 5
+Warning[203]: Found opcode in column 1. (BCF)
+0006   1283           00019 BCF 03h, 5
+Warning[203]: Found opcode in column 1. (BSF)
+0007   1686           00020 BSF 06h, 5
+                      00021 
+                      00022 ; Segment D
+Warning[203]: Found opcode in column 1. (BSF)
+0008   1683           00023 BSF 03h, 5
+Warning[203]: Found opcode in column 1. (BCF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0009   1206           00024 BCF 86h, 4
+Warning[203]: Found opcode in column 1. (BCF)
+000A   1283           00025 BCF 03h, 5
+Warning[203]: Found opcode in column 1. (BSF)
+000B   1606           00026 BSF 06h, 4
+                      00027 
+                      00028 ; Segment D
+Warning[203]: Found opcode in column 1. (BSF)
+000C   1683           00029 BSF 03h, 5
+Warning[203]: Found opcode in column 1. (BCF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+000D   1186           00030 BCF 86h, 3
+Warning[203]: Found opcode in column 1. (BCF)
+000E   1283           00031 BCF 03h, 5
+Warning[203]: Found opcode in column 1. (BSF)
+000F   1586           00032 BSF 06h, 3
+                      00033 
+MPASM  5.51                     EXERCISE2.ASM   2-1-2023  22:45:39         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00034 ; Segment G
+Warning[203]: Found opcode in column 1. (BSF)
+0010   1683           00035 BSF 03h, 5
+Warning[203]: Found opcode in column 1. (BCF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0011   1105           00036 BCF 85h, 2
+Warning[203]: Found opcode in column 1. (BCF)
+0012   1283           00037 BCF 03h, 5
+Warning[203]: Found opcode in column 1. (BSF)
+0013   1505           00038 BSF 05h, 2
+                      00039 
+Warning[203]: Found opcode in column 1. (GOTO)
+0014   2814           00040 GOTO $
+Warning[205]: Found directive in column 1. (END)
+                      00041 END
+MPASM  5.51                     EXERCISE2.ASM   2-1-2023  22:45:39         PAGE  3
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+__16F84A                          00000001
+__DEBUG                           1
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : XXXXXXXXXXXXXXXX XXXXX----------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:    21
+Program Memory Words Free:  1003
+
+
+Errors   :     0
+Warnings :    22 reported,     0 suppressed
+Messages :     5 reported,     0 suppressed
+
+

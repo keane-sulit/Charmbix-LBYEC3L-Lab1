@@ -1,0 +1,57 @@
+MPASM  5.51                     EXERCISE1.ASM   1-31-2023  23:37:56         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 ;======================================;
+                      00002 ; Author: Charmbix                                         ;
+                      00003 ; Version: 2.0                                             ;
+                      00004 ; Course: LBYEC3F - EK3                            ;
+                      00005 ; Title: Experiment 1: Exercise 1          ;
+                      00006 ;======================================; 
+                      00007 
+                      00008 ; Start
+                      00009 ; STEP 1: Operate on Memory Bank 1 to access the TRISB register.
+Warning[203]: Found opcode in column 1. (BSF)
+000000 8A03           00010 BSF 03h, 5 ; From here, we are now on Bank 1.
+                      00011 ; STEP 2: Make RB0 pin as output.
+Warning[203]: Found opcode in column 1. (BCF)
+000002 9186           00012 BCF 86h, 0 ; RB0 pin is now an 0utput.
+                      00013 ; STEP 3: Operate on Memory Bank 0 to access the PORTB register.
+Warning[203]: Found opcode in column 1. (BCF)
+000004 9A03           00014 BCF 03h, 5 ; Go back to Bank 0
+                      00015 ; STEP 4: Set the output of RB0 pin to HIGH.
+Warning[203]: Found opcode in column 1. (BSF)
+000006 8006           00016 BSF 06h, 0 ; RB0 pin is in HIGH state.
+                      00017 
+                      00018 
+Warning[203]: Found opcode in column 1. (GOTO)
+000008 EF04 F000      00019 GOTO $
+Warning[205]: Found directive in column 1. (END)
+                      00020 END
+MPASM  5.51                     EXERCISE1.ASM   1-31-2023  23:37:56         PAGE  2
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+__18F452                          00000001
+__DEBUG                           1
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : XXXXXXXXXXXX---- ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Bytes Used:    12
+Program Memory Bytes Free: 32756
+
+
+Errors   :     0
+Warnings :     6 reported,     0 suppressed
+Messages :     0 reported,     0 suppressed
+
+
